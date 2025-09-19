@@ -33,4 +33,4 @@ services:
     rootDir: ./laundry-app
     envVars:
       - key: REACT_APP_API_URL
-        value: render-here
+        value: https://ludiralaundry.onrender.com
