@@ -54,7 +54,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 const initializeDatabase = async () => {
   try {
     // Always use persistent MongoDB - no memory server
-    const mongoUri = MONGODB_URI; // 'mongodb://localhost:27017/laundry-app'
+    const mongoUri = MONGODB_URI; // 'mongodb+srv://Glitch:PETnvMU8X0414oW2@glitch.u5ylwcm.mongodb.net/?retryWrites=true&w=majority&appName=Glitch'
     
     await mongoose.connect(mongoUri, {
       serverSelectionTimeoutMS: 5000, // Timeout after 5s instead of 30s

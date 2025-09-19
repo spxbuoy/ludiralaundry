@@ -3,7 +3,7 @@ const Service = require('./models/Service');
 const User = require('./models/User');
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/laundry-app', {
+mongoose.connect('mongodb+srv://Glitch:PETnvMU8X0414oW2@glitch.u5ylwcm.mongodb.net/?retryWrites=true&w=majority&appName=Glitch', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });

@@ -61,7 +61,7 @@ PORT=5000
 NODE_ENV=development
 
 # Database
-MONGODB_URI=mongodb://localhost:27017/laundry-app
+MONGODB_URI=mongodb+srv://Glitch:PETnvMU8X0414oW2@glitch.u5ylwcm.mongodb.net/?retryWrites=true&w=majority&appName=Glitch
 # For MongoDB Atlas, use: mongodb+srv://username:password@cluster.mongodb.net/laundry-app
 
 # JWT Configuration

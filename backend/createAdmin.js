@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const User = require('./models/User');
 
-const MONGODB_URI = 'mongodb://localhost:27017/laundry-app';
+const MONGODB_URI = 'mongodb+srv://Glitch:PETnvMU8X0414oW2@glitch.u5ylwcm.mongodb.net/?retryWrites=true&w=majority&appName=Glitch';
 
 async function createAdmin() {
   await mongoose.connect(MONGODB_URI);
