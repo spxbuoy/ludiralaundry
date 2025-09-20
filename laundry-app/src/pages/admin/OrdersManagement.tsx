@@ -483,7 +483,7 @@ const OrdersManagement: React.FC = () => {
                       <Box key={index} sx={{ ml: 1, mb: 0.5 }}>
                         <Typography variant="body2" component="span">• </Typography>
                         <Typography variant="body2" component="span" sx={{ wordBreak: 'break-word', overflowWrap: 'anywhere' }}>
-                          {item.serviceName} x{item.quantity} - ¢{item.unitPrice.toFixed(2)}
+                          {item.serviceName} x{item.quantity} - KES{item.unitPrice.toFixed(2)}
                         </Typography>
                       </Box>
                     ))}
@@ -599,7 +599,7 @@ const OrdersManagement: React.FC = () => {
               {selectedOrder.items.map((item, index) => (
                 <Box key={index} sx={{ mb: 1 }}>
                   <Typography>
-                    {item.serviceName} x {item.quantity} - ¢{item.unitPrice.toFixed(2)} (Total: ¢{item.totalPrice.toFixed(2)})
+                    {item.serviceName} x {item.quantity} - KES{item.unitPrice.toFixed(2)} (Total: KES{item.totalPrice.toFixed(2)})
                   </Typography>
                   {item.specialInstructions && (
                     <Typography variant="body2" color="text.secondary">
@@ -638,9 +638,9 @@ const OrdersManagement: React.FC = () => {
               <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
                 Financials
               </Typography>
-              <Typography>Subtotal: ¢{selectedOrder.subtotal.toFixed(2)}</Typography>
-              <Typography>Tax: ¢{selectedOrder.tax.toFixed(2)}</Typography>
-              <Typography>Delivery Fee: ¢{selectedOrder.deliveryFee.toFixed(2)}</Typography>
+              <Typography>Subtotal: KES{selectedOrder.subtotal.toFixed(2)}</Typography>
+              <Typography>Tax: KES{selectedOrder.tax.toFixed(2)}</Typography>
+              <Typography>Delivery Fee: KES{selectedOrder.deliveryFee.toFixed(2)}</Typography>
               <Typography variant="h5" color="primary">
                 Total: {selectedOrder.formattedTotal}
               </Typography>

@@ -661,7 +661,7 @@ const NewOrderPage = () => {
                       <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                         <span>{service.icon}</span>
                         <Typography variant="body2" sx={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', maxWidth: 240 }}>
-                          {service.name} — ¢{(service.basePrice || service.price || 0).toFixed(2)} {service.estimatedTime ? `(${service.estimatedTime})` : ''}
+                          {service.name} — KES{(service.basePrice || service.price || 0).toFixed(2)} {service.estimatedTime ? `(${service.estimatedTime})` : ''}
                         </Typography>
                       </Box>
                     </MenuItem>
@@ -809,7 +809,7 @@ const NewOrderPage = () => {
                       {selectedServices.map((service) => (
                         <Box key={service._id || service.id} sx={{ mb: 2 }}>
                           <Typography variant="subtitle2" color="primary" sx={{ mb: 1, fontWeight: 'bold' }}>
-                            {service.name} - ¢{(service.basePrice || service.price || 0).toFixed(2)} each
+                            {service.name} - KES{(service.basePrice || service.price || 0).toFixed(2)} each
                           </Typography>
                           {service.clothingItems?.map((item, index) => (
                             <Box key={item.itemId} sx={{
@@ -835,7 +835,7 @@ const NewOrderPage = () => {
                               </Box>
                               <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                                 <Typography variant="caption" color="primary">
-                                  ¢{item.unitPrice.toFixed(2)}
+                                  KES{item.unitPrice.toFixed(2)}
                                 </Typography>
                                 <IconButton
                                   size="small"
@@ -853,7 +853,7 @@ const NewOrderPage = () => {
                         <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
                           <Typography variant="subtitle2">Subtotal ({getTotalItemsCount()} items):</Typography>
                           <Typography variant="subtitle2" color="primary" sx={{ fontWeight: 'bold' }}>
-                            ¢{calculateSubtotal().toFixed(2)}
+                            KES{calculateSubtotal().toFixed(2)}
                           </Typography>
                         </Box>
                       </Box>
@@ -1090,7 +1090,7 @@ const NewOrderPage = () => {
             control={<Checkbox checked={orderData.isUrgent} onChange={(e) => setOrderData((prev) => ({ ...prev, isUrgent: e.target.checked }))} />}
             label={
               <Box>
-                <Typography>Urgent Service (+¢10.00)</Typography>
+                <Typography>Urgent Service (+KES10.00)</Typography>
                 <Typography variant="caption" color="text.secondary">Urgent halves the delivery duration.</Typography>
               </Box>
             }
@@ -1258,13 +1258,13 @@ const NewOrderPage = () => {
                       )}
                     </Box>
                     <Typography variant="body2" color="primary" sx={{ fontWeight: 'bold' }}>
-                      ¢{item.unitPrice.toFixed(2)}
+                      KES{item.unitPrice.toFixed(2)}
                     </Typography>
                   </Box>
                 ))}
                 <Box sx={{ textAlign: 'right', mt: 1, pt: 1, borderTop: '1px solid', borderColor: 'divider' }}>
                   <Typography variant="subtitle2" color="primary">
-                    Service Total: ¢{service.clothingItems.reduce((sum, item) => sum + (item.unitPrice || 0), 0).toFixed(2)}
+                    Service Total: KES{service.clothingItems.reduce((sum, item) => sum + (item.unitPrice || 0), 0).toFixed(2)}
                   </Typography>
                 </Box>
               </Box>
@@ -1272,10 +1272,10 @@ const NewOrderPage = () => {
               // Fallback to quantity display
               <Box sx={{ ml: 3 }}>
                 <Typography variant="body2" color="text.secondary">
-                  Quantity: {service.quantity} × ¢{(service.price || service.basePrice || 0).toFixed(2)}
+                  Quantity: {service.quantity} × KES{(service.price || service.basePrice || 0).toFixed(2)}
                 </Typography>
                 <Typography variant="subtitle2" color="primary">
-                  Total: ¢{((service.price || service.basePrice || 0) * (service.quantity || 0)).toFixed(2)}
+                  Total: KES{((service.price || service.basePrice || 0) * (service.quantity || 0)).toFixed(2)}
                 </Typography>
               </Box>
             )}
@@ -1343,15 +1343,15 @@ const NewOrderPage = () => {
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
           <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
             <Typography>Subtotal:</Typography>
-            <Typography>¢{calculateSubtotal().toFixed(2)}</Typography>
+            <Typography>KES{calculateSubtotal().toFixed(2)}</Typography>
           </Box>
           <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
             <Typography>Tax (10%):</Typography>
-            <Typography>¢{calculateTax(calculateSubtotal()).toFixed(2)}</Typography>
+            <Typography>KES{calculateTax(calculateSubtotal()).toFixed(2)}</Typography>
           </Box>
           <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
             <Typography>Delivery Fee:</Typography>
-            <Typography>¢{orderData.isUrgent ? '10.00' : '5.00'}</Typography>
+            <Typography>KES{orderData.isUrgent ? '10.00' : '5.00'}</Typography>
           </Box>
           {orderData.isUrgent && (
             <Box sx={{ display: 'flex', justifyContent: 'space-between', color: 'warning.main' }}>
@@ -1362,7 +1362,7 @@ const NewOrderPage = () => {
           <Box sx={{ borderTop: 1, borderColor: 'divider', pt: 2, mt: 2, display: 'flex', justifyContent: 'space-between' }}>
             <Typography variant="h6">Total:</Typography>
             <Typography variant="h6" color="primary">
-              ¢{calculateTotal().toFixed(2)}
+              KES{calculateTotal().toFixed(2)}
             </Typography>
           </Box>
         </Box>

@@ -333,7 +333,7 @@ const PaystackPayment: React.FC<PaystackPaymentProps> = ({
     currency: 'GHS',
     reference: paymentData?.reference || '',
     publicKey: config?.publicKey || '',
-    text: `Pay ¢${amount.toFixed(2)}`,
+    text: `Pay KES${amount.toFixed(2)}`,
     onSuccess: (reference: any) => handlePaystackSuccess(reference.reference),
     onClose: handlePaystackClose,
     channels: ['mobile_money'], // Restrict to MoMo only
@@ -395,7 +395,7 @@ const PaystackPayment: React.FC<PaystackPaymentProps> = ({
             <Box display="flex" justifyContent="space-between" alignItems="center">
               <Typography>Total Amount:</Typography>
               <Typography variant="h6" color="primary">
-                ¢{amount.toFixed(2)}
+                KES{amount.toFixed(2)}
               </Typography>
             </Box>
             <Typography variant="body2" color="text.secondary">

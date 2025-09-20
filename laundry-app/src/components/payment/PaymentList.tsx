@@ -41,7 +41,7 @@ const PaymentList: React.FC<PaymentListProps> = ({ payments }) => {
             <ListItemText
               primary={
                 <Typography variant="subtitle1">
-                  Amount: ¢{payment.amount.toFixed(2)}
+                  Amount: KES{payment.amount.toFixed(2)}
                 </Typography>
               }
               secondary={

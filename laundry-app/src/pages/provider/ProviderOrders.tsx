@@ -575,7 +575,7 @@ const ProviderOrders: React.FC = () => {
                             <Box key={clothingItem.itemId} sx={{ ml: 1, mb: 0.5 }}>
                               <Typography variant="body2" component="span">• </Typography>
                               <Typography variant="body2" component="span" sx={{ wordBreak: 'break-word', overflowWrap: 'anywhere' }}><strong>{clothingItem.itemId}</strong>: {clothingItem.description} </Typography>
-                              <Typography variant="body2" component="span" sx={{ wordBreak: 'break-word', overflowWrap: 'anywhere' }}>({clothingItem.serviceName}) - ¢{clothingItem.unitPrice.toFixed(2)}</Typography>
+                              <Typography variant="body2" component="span" sx={{ wordBreak: 'break-word', overflowWrap: 'anywhere' }}>({clothingItem.serviceName}) - KES{clothingItem.unitPrice.toFixed(2)}</Typography>
                               <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mt: 0.5 }}>
                                 <Chip
                                   label={clothingItem.isConfirmed ? 'Received ✓' : 'Pending Receipt'}

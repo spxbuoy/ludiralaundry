@@ -290,7 +290,7 @@ const CustomerDashboard: React.FC = () => {
                             </Typography>
                             <br />
                             <Typography variant="body2" color="text.secondary" component="span">
-                              Total: ¢{Number(order.totalAmount || 0).toFixed(2)}
+                              Total: KES{Number(order.totalAmount || 0).toFixed(2)}
                             </Typography>
                           </Box>
                         }

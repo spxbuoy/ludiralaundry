@@ -290,7 +290,7 @@ const PaymentForm: React.FC<PaymentFormProps> = ({
         <Box display="flex" justifyContent="space-between" alignItems="center">
           <Typography variant="h6">Total Amount:</Typography>
           <Typography variant="h6" color="primary">
-            ¢{(amount / 100).toFixed(2)}
+            KES{(amount / 100).toFixed(2)}
           </Typography>
         </Box>
 

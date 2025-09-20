@@ -61,7 +61,7 @@ const OrderSummary: React.FC<OrderSummaryProps> = ({
                       {service?.name} x {item.quantity}
                     </Typography>
                     <Typography>
-                      ¢{(item.price * item.quantity).toFixed(2)}
+                      KES{(item.price * item.quantity).toFixed(2)}
                     </Typography>
                   </Box>
                 </Box>
@@ -71,7 +71,7 @@ const OrderSummary: React.FC<OrderSummaryProps> = ({
             <Box display="flex" justifyContent="space-between">
               <Typography variant="subtitle1">Total:</Typography>
               <Typography variant="subtitle1" color="primary">
-                ¢{totalPrice.toFixed(2)}
+                KES{totalPrice.toFixed(2)}
               </Typography>
             </Box>
           </Paper>

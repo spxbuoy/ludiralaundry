@@ -204,7 +204,7 @@ orderSchema.virtual('orderNumber').get(function () {
 
 // Virtual for formatted total amount (Ghana Cedis)
 orderSchema.virtual('formattedTotal').get(function () {
-  return `¢${this.totalAmount.toFixed(2)}`;
+  return `KES${this.totalAmount.toFixed(2)}`;
 });
 
 // Virtual for order duration in days

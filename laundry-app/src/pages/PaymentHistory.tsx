@@ -275,7 +275,7 @@ Thank you for your business!
   };
 
   const formatDate = (dateString: string) => format(new Date(dateString), 'MMM dd, yyyy HH:mm');
-  const formatCurrency = (amount: number) => `¢${amount.toFixed(2)}`;
+  const formatCurrency = (amount: number) => `KES${amount.toFixed(2)}`;
 
   return (
     <Box sx={{ p: 3 }}>
