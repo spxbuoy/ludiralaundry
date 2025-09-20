@@ -21,7 +21,7 @@ const AdminDashboard: React.FC = () => {
   return (
     <Box sx={{ p: 3 }}>
       <Typography variant="h4" gutterBottom>
-        Shop Owner Dashboard
+        shop Manager Dashboard
       </Typography>
       <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 3 }}>
         {/* User Management Section */}
