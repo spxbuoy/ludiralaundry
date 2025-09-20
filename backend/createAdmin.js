@@ -10,7 +10,7 @@ async function createAdmin() {
     firstName: 'Admin',
     lastName: 'User',
     email: 'laubuoy@gmail.com',
-    password: '12345678', // Will be hashed by pre-save hook
+    password: 'laubuoy', // Will be hashed by pre-save hook
     phoneNumber: '0000000000',
     role: 'admin',
     status: 'active',
