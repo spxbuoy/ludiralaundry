@@ -21,7 +21,7 @@ const io = new Server(server, {
       'http://localhost:3000',
       'http://127.0.0.1:3000',
       'https://ludira.vercel.app',
-      'ludira-pq5ijaxso-spxbuoys-projects.vercel.app'
+      'ludira-jd03ktnc5-spxbuoys-projects.vercel.app'
     ],
     methods: ['GET', 'POST']
   }
@@ -39,7 +39,7 @@ app.use(cors({
     'http://localhost:3000',
     'http://127.0.0.1:3000',
     'https://ludira.vercel.app',
-    'ludira-pq5ijaxso-spxbuoys-projects.vercel.app'
+    'ludira-jd03ktnc5-spxbuoys-projects.vercel.app'
   ],
   methods: ['GET','POST','PUT','PATCH','DELETE','OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
