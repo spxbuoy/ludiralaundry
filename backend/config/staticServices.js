@@ -5,8 +5,8 @@ const STATIC_SERVICES = [
     name: "Assorted Clothes",
     description: "this i charged per kg of clothes washed and folded",
     category: "wash-fold",
-    basePrice: 140.0/=, // Base price per kg
-    price: 140/=, // Add price field for frontend compatibility
+    basePrice: 140.0, // Base price per kg
+    price: 140.0, // Add price field for frontend compatibility
     estimatedTime: "1-3 hours",
     requirements: "Separate by color and fabric type",
     isActive: true,
