@@ -9,8 +9,8 @@ async function createAdmin() {
   const adminData = {
     firstName: 'Admin',
     lastName: 'User',
-    email: 'laubuoy@gmail.com',
-    password: 'laubuoy', // Will be hashed by pre-save hook
+    email: 'admin@example.com',
+    password: 'adminpassword', // Will be hashed by pre-save hook
     phoneNumber: '0000000000',
     role: 'admin',
     status: 'active',
