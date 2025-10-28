@@ -20,8 +20,8 @@ const io = new Server(server, {
     origin: [
       'http://localhost:3000',
       'http://127.0.0.1:3000',
-      'https://ludira.vercel.app',
-      'https://ludira-jd03ktnc5-spxbuoys-projects.vercel.app'
+      'https://ludiralaundry.vercel.app',
+      'https://ludiralaundry-eod8tz3lr-spxbuoys-projects.vercel.app'
     ],
     methods: ['GET', 'POST']
   }
@@ -38,8 +38,8 @@ app.use(cors({
   origin: [
     'http://localhost:3000',
     'http://127.0.0.1:3000',
-    'https://ludira.vercel.app',
-    'https://ludira-jd03ktnc5-spxbuoys-projects.vercel.app'
+    'https://ludiralaundry.vercel.app',
+    'https://ludiralaundry-eod8tz3lr-spxbuoys-projects.vercel.app'
   ],
   methods: ['GET','POST','PUT','PATCH','DELETE','OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
@@ -54,7 +54,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 const initializeDatabase = async () => {
   try {
     // Always use persistent MongoDB - no memory server
-    const mongoUri = MONGODB_URI; // 'mongodb+srv://Glitch:PETnvMU8X0414oW2@glitch.u5ylwcm.mongodb.net/?retryWrites=true&w=majority&appName=Glitch'
+    const mongoUri = MONGODB_URI; //  'mongodb+srv://Glitch:PETnvMU8X0414oW2@glitch.u5ylwcm.mongodb.net/?retryWrites=true&w=majority&appName=Glitch'
     
     await mongoose.connect(mongoUri, {
       serverSelectionTimeoutMS: 5000, // Timeout after 5s instead of 30s
